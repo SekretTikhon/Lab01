@@ -87,6 +87,7 @@ namespace Lab01
             }
         }
         */
+        //что за херня!!!!
         IEnumerator IEnumerable.GetEnumerator()
         {
             return ((IEnumerable<Person>)listPerson).GetEnumerator();
