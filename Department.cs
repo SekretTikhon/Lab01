@@ -69,16 +69,17 @@ namespace Lab01
             }
             return dep;
         }
+        
         public Person this[int index]
         {
             get { return listPerson[index]; }
         }
+        
         public IEnumerator<Person> GetEnumerator()
         {
             return ((IEnumerable<Person>)listPerson).GetEnumerator();
         }
-        /*
-        public IEnumerator ResIterator()/////////
+        public IEnumerable<Person> ResIterator()
         {
             foreach (Person per in listPerson)
             {
@@ -86,12 +87,9 @@ namespace Lab01
                     yield return per;
             }
         }
-        */
-        //что за херня!!!!
-        IEnumerator IEnumerable.GetEnumerator()
+        public int Res()
         {
-            return ((IEnumerable<Person>)listPerson).GetEnumerator();
+            return 4;
         }
-
     }
 }
